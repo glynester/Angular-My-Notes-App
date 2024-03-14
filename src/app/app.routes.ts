@@ -14,9 +14,9 @@ export const routes: Routes = [
   { path: 'home', title: 'Home Page', component: HomeComponent },
   { path: 'contacts', title: 'Contacts Page', component: ContactsComponent },
   // { path: 'new', component: AddNoteComponent },
-  { path: 'notes/new', component: AddNoteComponent },
-  { path: 'notes', component: NotesListComponent },
-  { path: 'note/:id', component: NoteDetailComponent },
-  { path: 'play', component: PlayAreaComponent},
+  { path: 'notes/new', title: 'New Note', component: AddNoteComponent },
+  { path: 'notes', title: 'All Note',component: NotesListComponent },
+  { path: 'note/:id', title: 'Note Detail',component: NoteDetailComponent },
+  { path: 'play', title: 'Play Area',component: PlayAreaComponent},
   { path: '**', title: 'Page Not Found', component: NotFoundComponent },
 ];
