@@ -1,0 +1,18 @@
+<!-- <p>notes-list works!</p> -->
+
+<div class="container">
+  <nav>
+    <button type="button" class="button" type="submit"  routerLink="./new">Add New</button>
+  </nav>
+  <ul class="notes">
+    @for (note of notes; track $index) {
+      <li>
+        <button [routerLink]="['/note', note.id]">
+          <span class="note-title">{{ note.title }}</span><br>
+          <span class="note-text">{{ note.text }}</span>
+        </button>
+      </li>
+    }
+  </ul>
+</div>
+

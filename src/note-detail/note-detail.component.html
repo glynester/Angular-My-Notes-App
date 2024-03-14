@@ -1,0 +1,14 @@
+<div class="container">
+  <h3>Note Detail</h3>
+  @if (note) {
+  <div id="note-container">
+    <span class="notes note-title">{{ note.title }}</span>
+    <span class="notes note-id">ID: {{ note.id }}</span><br>
+    <span class="notes note-text">{{ note.text }}</span><br>
+    <button type="button" class="button" type="submit" (click)="delete(note)">DELETE NOTE</button>
+  </div>
+  }
+  <nav>
+    <button routerLink="/notes">Back to List</button>
+  </nav>
+</div>

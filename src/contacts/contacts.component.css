@@ -1,0 +1,8 @@
+p {
+  color: rgb(52, 18, 177);
+}
+
+div {
+  border: 3px solid rgb(52, 18, 177);;
+  padding: 10px;
+}
